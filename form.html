@@ -1,0 +1,28 @@
+<html>
+<pre>
+<form autocomplete=off>
+<!--label for=user>Username: </label-->
+<input type=text name=username id=user placeholder="Username"pattern="[a-z]{1,5}" title="Should contain only lowercase"><br>
+Password: <input type=password name=pwd required><br>
+<hr>
+DOB: <input type=date>
+Gender: Male<input type=radio name=r1>
+	Female<input type=radio name=r1 checked><br>
+Email: <input type=email>
+Age: <input type=number name=age>
+Phone number: <input type= phone max=10>
+<fieldset>
+<legend>Hobbies</legend>
+	 Reading<input type=checkbox name=c1>
+	 Playing<input type=checkbox name=c1 checked>
+	 Dancing<input type=checkbox name=c1><br>
+</fieldset>
+Address: <textarea></textarea>
+Upload: <input type=file>
+Proficiency in: <select multiple>
+<option>C</option>
+<option>C++</option>
+<option selected>Java</option>
+<option>C#</option><br><br>
+<input type=submit value=Submit>
+</form>

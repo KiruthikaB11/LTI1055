@@ -1,0 +1,34 @@
+<head>
+<script>
+var i=0,a; 
+a=new Array();
+a[0]="C:\\Users\\USER\\Desktop\\HTML CSS\\bg2.jpg";
+a[1]="C:\\Users\\USER\\Desktop\\HTML CSS\\bg4.jpg";
+function starts()
+{
+	
+	document.img1.src=a[i];
+	i++;
+	id=setTimeout("starts()",0.5);
+if(i==2)
+i=0;	
+}
+function stop()
+{
+
+
+	clearTimeout(id);
+}
+
+</script>
+</head>
+<body>
+
+<img src="C:\Users\USER\Desktop\HTML CSS\bg3.jpg" height=300 width=200 name=img1>
+
+<input type=button name=b1 value="start" onclick="starts()";>
+<input type=button name=b1 value="stop" onclick="stop()";>
+
+
+</body>
+</html>

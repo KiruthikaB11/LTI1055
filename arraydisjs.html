@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+var n;
+n=parseInt(prompt("Employee recrods :","000"));
+var names,age,salary;
+
+function getdetails()
+{    this.names=prompt("Employee Name :");     
+     this.age=parseInt(prompt("Enter age :"));     
+     this.salary=parseFloat(prompt("Enter salary :"));
+}
+a=new Array();
+for(i=0;i<n;i++)
+{    a[i]=new getdetails();
+
+}
+for(j=0;j<n;j++)
+{    document.writeln(a[j].names);    
+  	document.writeln(a[j].age);    
+	document.writeln(a[j].salary);    
+
+}
+</script>
+</body>
+</html>
+

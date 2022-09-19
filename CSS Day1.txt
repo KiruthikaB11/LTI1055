@@ -1,0 +1,82 @@
+CSS- cascading style sheet
+types
+1. internal
+2. external
+3. inline
+
+selector- tag,id selector
+*-universal selector-applicable for all data
+
+<html>
+<head>
+<link rel="stylesheet"href="style2.css">
+</head>
+<style>
+h1 
+{
+  color:red;
+  text-align:center;	
+}
+p
+{
+  font-family:Harrington;
+  font-size:24px;
+  color: blue;
+}
+</style>
+<h1 class=a1>Document</h1>
+<h1>Document submit</h1>
+<p class=a1>Paragraph..........</p>
+</html>
+
+the external stylesheet- html in 1 file css in another file
+using, <link rel="stylesheet"href="style2.css"> in html access css
+
+background-image:url("bg1.jpg");
+  opacity: 0.3;	
+
+Inline
+<link rel="stylesheet"href="style2.css">
+<h1 style="color:orange;background-color:blue">Document</h1>
+
+background-repeat:repeat-x; (horizontal position)
+background-repeat:repeat-y; (vertical position)
+background-repeat:no-repeat; (no repeat)
+
+background-position:center;
+<opacity: 0.3;> -blur effect
+background-size:contain- full image, cover gives particular size
+
+column-count:3; ->to split up the para
+column-rule:4px dashed purple; ->vertical line in between split up
+
+
+
+<style>
+#animate
+{
+	text-align:center;
+	width:60px;
+	height:40px;
+	background-color:pink;
+	color:brown;
+	padding:30px;
+	position:relative;
+	animation:animate 5s infinite;
+}
+@keyframes animate
+{
+	0%{left:0px;}
+	20%{left:50px;background-color:yellow;}
+	40%{left:50px;background-color:orange;}
+	60%{top:50px;background-color:blue;}
+	80%{top:50px;background-color:green;}
+	100%{left:50px;background-color:purple;}
+}
+	
+</style>
+</head>
+<body>
+<div id="animate">
+<p>Document animated</p>
+</div>

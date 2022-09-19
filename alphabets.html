@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function alpha(val)
+{
+ var len=parseInt(val.length);
+ if( val==" "||val==null)
+	{
+		alert("enter data");
+	}
+	else
+	{
+		for(i=0;i<len;i++)
+		{
+			var str=val.substring(i,i+2);
+			if(!((str>="A" && str<="Z") || (str>="A" && str<="Z")))
+			{
+					alert("invalid !! enter only alphabets");
+					break;
+			}
+			f1.t1.focus();		
+		}
+	}
+}
+</script>
+</head>
+<body onload="alert('welcome')">
+
+<form name=f>
+Enter ur name: <input type=text name=t1 onChange=alpha(this.value)>
+
+</form>
+
+</body>
+</html>	

@@ -1,0 +1,695 @@
+
+<html>
+    <head>
+        <title>
+            tables
+        </title>
+    </head>
+    <body>
+        
+        <table border="5">
+            <tr>
+                <th>Country</th>
+                <th colspan="2">
+                    Population
+                </th>
+            </tr>
+            <tr>
+                <td rowspan="3">India</td>
+                <td>1998</td><td>85</td></tr>
+              <tr>  <td>1999</td><td>90</td></tr>
+               <tr> <td>2000</td><td>100</td></tr>
+               <tr>
+                <td rowspan="3">Usa</td>
+                <td>1998</td><td>30</td></tr>
+              <tr>  <td>1999</td><td>35</td></tr>
+               <tr> <td>2000</td><td>40</td></tr>
+            
+               <tr>
+                <td rowspan="3">Uk</td>
+                <td>1998</td><td>35</td></tr>
+              <tr>  <td>1999</td><td>90</td></tr>
+               <tr> <td>2000</td><td>100</td></tr>
+            
+        </table>
+    </body>
+</html>
+
+
+
+<html>
+<form autocomplete=off>
+<pre>
+<!--<label for=user>Username: </label>-->
+<input type=text name=username id=user placeholder="enter user name" pattern="[a-z,0-9]{1,15}" required  title="should contain lower alphabets only">
+<label for=pass>password:</label>
+<input type=password name=pass id=pass>
+<hr color=red>
+
+Gender :male <input type=radio name=r checked >
+        female <input type=radio name=r> 
+<fieldset >
+<legend>Hobbies></legend>
+         Cricket <input type=checkbox name=c1 checked>
+         dance   <input type=checkbox name=c1>
+         movies  <input type=checkbox name=c1>
+
+</fieldset background-color=gray required >
+
+Adress:   <textarea ></textarea>
+
+email: <input type=email>
+
+numbe: <input type=number max=10>
+
+proficiency in:<select >
+<option>C</option>
+<option>C++</option>
+<option selected>java</option>
+<option>C#</option></select>
+
+<input type=submit value=click>
+</form>
+</html>
+
+
+
+<html>
+<body link=green alink=r=yellow vlink=orange>
+<a href="C:\Users\GIRIBABU\OneDrive\Desktop\pic2.jpg" target=F1>getimg</a>
+
+<a href="C:\Users\GIRIBABU\OneDrive\Desktop\pic1.jpg" target=F1>getimg2</a>
+
+<a href="C:\Users\GIRIBABU\OneDrive\Desktop\display.jpg" target=F1>getimg3</a>
+</body>
+</html>
+
+
+
+
+h1
+{
+color:red;
+text-align:center;
+}
+p
+{
+color:yellow;
+font-family:"MV Boli";
+font-size:24px;
+
+}
+
+
+
+<html>
+<head>
+
+<style>
+#animate
+{
+	text-align:center;
+	width:60px;
+	height:40px;
+	background-color:pink;
+	color:brown;
+	padding:30px;
+	animation:animate 5s infinite;
+	position:relative;
+}
+@keyframes animate
+{
+	0%{left:0px;}
+	20%{left:50px;background-color:yellow;}
+	40%{left:150px;background-color:blue;}
+	60%{left:280px;background-color:red;}
+	80%{left:420px;background-color:orange;}
+	100%{left:0px;background-color:green;}
+	
+}
+</style>
+</head>
+<body>
+<div id="animate">
+<p class=a> paragragh.....!</P>
+</div>
+
+</body>
+
+</html>
+
+
+
+java script:
+
+
+
+var a;    loosely typed
+
+b=10;
+
+java script is a interpratation no compilation
+platform independent language
+object based language
+
+
+js objects
+
+windows document form array 
+
+
+
+
+
+
+<html>
+<head>
+<script language="javascript">
+document.writeln("this is my first program");
+
+</script>
+</head>
+<body>
+<script>
+
+document.writeln("this is my first program");
+</script>
+</body>
+</html>
+
+alert("this is my first program");
+
+
+
+document.writeln("god gives every bird it\'s food but he doesn\'t throw it into it\'s nest");
+
+
+var name="giri";
+document.writeln("hello "+name);
+
+var name="giri";
+document.writeln("<font color=red> hello "+name);
+
+
+
+var name=prompt("engter ur name ","none");
+document.writeln("<font color=red> hello "+name);
+
+
+
+
+
+
+
+<html>
+<body>
+<script language="javascript">
+var n1=prompt("Enter 1st Number","000");
+var n2=prompt("Enter 2nd Number","000");
+var n3=prompt("Enter 3rd Number","000");
+if(parseInt(n1)>parseInt(n2) && parseInt(n1)>parseInt(n3))
+{
+document.write(n1+" is the greatest");
+}
+else if(parseInt(n2)>parseInt(n1) && parseInt(n2)>parseInt(n3))
+{
+document.write(n2+" is the greatest");
+}
+else 
+{
+document.write(n3+" is the greatest");
+}
+ 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<script>
+fuction fact(input)
+{
+	var num=1;
+	if(input>1)
+	{
+		for(i=2;i<=input;i++)
+			num=num*i;
+		return num;
+	}
+	else
+	{
+		return num;
+	}
+}
+</script>
+</head>
+<body>
+<script language="javascript">
+var input=prompt("Enter 1st Number","000");
+
+var output=fact(input);
+document.write(output);
+</script>
+</body>
+</html>
+
+
+<html>
+<head>
+<script>
+
+function disp(val)
+{
+	if(val==null)
+	{
+		val="greeting"
+	}
+	alert(val);
+}
+function disp()
+{
+	alert("welcome");
+	
+}
+	 
+</script>
+</head>
+<body>
+<script language="javascript">
+
+disp("good mornig");
+disp();
+</script>
+</body>
+</html>
+
+
+
+
+<html>
+<head>
+<script>
+
+toatl=0;
+function sum()
+{
+	y=20;
+	var x=10;
+	total=x+y;
+}
+function disp()
+{	
+	sum();
+	alert(total);
+	alert(x);
+	alert(y);
+}
+	 
+</script>
+</head>
+<body>
+<script language="javascript">
+disp();
+</script>
+</body>
+</html>
+
+
+
+
+
+<html>
+<head>
+<script>
+	 
+</script>
+</head>
+<body>
+<script language="javascript">
+
+var dt=new Date();
+document.write(dt);
+
+</script>
+</body>
+</html>
+
+
+
+getDay();
+getDate();
+getMonth();
+getYear();
+getHours();
+getMinutes();
+getSeconds();
+
+
+
+
+
+[12:15 PM] Bhavana Ganagalla
+<html>
+
+<body>
+
+<script language="javascript">
+
+var dt=new Date();
+
+var hr = dt.getHours();
+
+if(hr>=0 && hr<12)
+
+{​​​​​
+
+     document.write("GOOD MORNING");   
+
+}​​​​​
+
+else if(hr>=12 && hr<16)
+
+{​​​​​
+
+     document.write("GOOD AFTERNOON");
+
+}​​​​​
+
+else if(hr>=16 && hr<20)
+
+{​​​​​
+
+    document.write("GOOD EVENING");
+
+}​​​​​
+
+else
+
+{​​​​​
+
+    document.write("GOOD NIGHT");
+
+}​​​​​
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<html>
+<head>
+<script>
+	 
+</script>
+</head>
+<body>
+<script language="javascript">
+
+
+document.writeln(Math.cos(30)+"<br>");
+document.writeln(Math.round(45.4)+"<br>");
+document.writeln(Math.sqrt(16)+"<br>");
+document.writeln(Math.pow(4,2)+"<br>");
+document.writeln(Math.ceil(12.1)+"<br>");
+document.writeln(Math.floor(16.8)+"<br>");
+document.writeln(Math.max(12,35)+"<br>");
+document.writeln(Math.min(2,16,34,67)+"<br>");
+document.writeln(Math.log(100)+"<br>");
+
+</script>
+</body>
+</html>
+
+
+<html>
+<head>
+<script>
+	 
+</script>
+</head>
+<body>
+<script language="javascript">
+var s="welcome to javascript";
+
+document.writeln(s+"<br>");
+document.writeln(s.indexOf("t")+"<br>");
+document.writeln(s.lastIndexOf("t")+"<br>");
+document.writeln(s.charAt(8)+"<br>");
+document.writeln(s.substring(8,15)+"<br>");
+document.writeln(s.toUpperCase()+"<br>");
+document.writeln(s.toLowerCase()+"<br>");
+document.writeln(s.bold()+"<br>");
+document.writeln(s.italics()+"<br>");
+document.writeln(s.big()+"<br>");
+document.writeln(s.strike()+"<br>");
+document.writeln(s.length+"<br>");
+document.writeln(s.fontcolor("blue")+"<br>");
+</script>
+</body>
+</html>
+
+
+
+
+
+<html>
+<head>
+<script>
+	 
+function change1()
+{
+	
+	document.img1.src="C:\\Users\\GIRIBABU\\OneDrive\\Desktop\\pic5.jpg";
+}
+function change2()
+{
+
+
+	document.img1.src="C:\\Users\\GIRIBABU\\OneDrive\\Desktop\\pic1.jpg";
+}
+
+</script>
+</head>
+<body>
+\
+<img src="C:\\Users\\GIRIBABU\\OneDrive\\Desktop\\pic2.jpg" height=300 width=200 name=img1   onMouseOver=change1() onMouseOut=change2()>
+
+
+
+</body>
+</html>
+
+
+
+
+<html>
+<head>
+<script>
+var i=0,a; 
+a=new Array();
+a[0]="C:\\Users\\GIRIBABU\\OneDrive\\Desktop\\pic5.jpg"
+a[1]="C:\\Users\\GIRIBABU\\OneDrive\\Desktop\\pic1.jpg"
+function starts()
+{
+	
+	document.img1.src=a[i];
+	i++;
+	id=setTimeout("starts()",0.5);
+if(i==2)
+i=0;	
+}
+function stop()
+{
+
+
+	clearTimeout(id);
+}
+
+</script>
+</head>
+<body>
+\
+<img src="C:\\Users\\GIRIBABU\\OneDrive\\Desktop\\pic2.jpg" height=300 width=200 name=img1>
+
+<input type=button name=b1 value="start" onclick="starts()";>
+<input type=button name=b1 value="stop" onclick="stop()";>
+
+
+</body>
+</html>
+
+
+
+
+
+<html>
+<body>
+<script>
+var n;
+n=parseInt(prompt("Employee recrods :","000"));
+var names,age,salary;
+
+function getdetails()
+{    this.names=prompt("Employee Name :");     
+     this.age=parseInt(prompt("Enter age :"));     
+     this.salary=parseFloat(prompt("Enter salary :"));
+}
+a=new Array();
+for(i=0;i<n;i++)
+{    a[i]=new getdetails();
+
+}
+for(j=0;j<n;j++)
+{    document.writeln(a[j].names);    
+  	document.writeln(a[j].age);    
+	document.writeln(a[j].salary);    
+
+}
+</script>
+</body>
+</html>
+
+
+<html>
+<body>
+<script>
+names=new Array();
+num=new Array();
+salary=new Array();
+n = prompt("Enter total number of employees.",'1');
+for(i=0;i<n;i++)
+{
+    names[i]=prompt("Enter employee name:","Vikram");
+    num[i]=prompt("Enter employee number:","000");
+    salary[i]=prompt("Enter employee salary:","1000");
+}
+document.write("Employee Details are:");
+document.write("<table border=1>");
+document.write("<tr><th>Employee name</th><th>Employee Number</th><th>Employee salary</th><tr>");    
+for(x=0;x<n;x++)
+{         
+    document.write("<tr><td>"+names[x]+"</td><td>"+num[x]+"</td><td>"+salary[x]+"</td></tr>");
+}
+document.write("</table>");
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<script>
+function cal(f1)
+{
+ f1.t2.value=f1.t1.value*f1.t1.value
+ f1.t3.value=f1.t2.value*f1.t1.value
+}
+</script>
+</head>
+<body>
+<form name=f>
+Enter a num: <input type=text name=t1 onChange=cal(f)>
+square of num: <input type=text name=t2>
+cube of num: <input type=text name=t3>
+</form>
+
+</body>
+</html>	
+
+
+<html>
+<head>
+<script>
+function alpha(val)
+{
+ var len=parseInt(val.length);
+ if( val==" "||val==null)
+	{
+		alert("enter data");
+	}
+	else
+	{
+		for(i=0;i<len;i++)
+		{
+			var str=val.substring(i,i+2);
+			if(!((str>="A" && str<="Z") || (str>="A" && str<="Z")))
+			{
+					alert("invalid !! enter only alphabets");
+					break;
+			}
+			f1.t1.focus();		
+		}
+	}
+}
+</script>
+</head>
+<body onload="alert('welcome')">
+
+<form name=f>
+Enter ur name: <input type=text name=t1 onChange=alpha(this.value)>
+
+</form>
+
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

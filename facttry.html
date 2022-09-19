@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function facto(input)
+{
+	var fact=1;
+	if(input>1)
+	{
+	for(i=2;i<=input;i++)
+		fact=fact*i;
+	return fact;
+	}
+	else
+	{
+		return fact;
+	}
+}
+
+
+</script>
+</head>
+<body>
+<script language="javascript">
+var input=prompt("Enter a number: ");
+var output=facto(input);
+document.write(output);
+</script>
+</body>
+</html>
